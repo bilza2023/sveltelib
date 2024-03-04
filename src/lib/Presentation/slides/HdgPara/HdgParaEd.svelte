@@ -1,6 +1,6 @@
 <script>
 //@ts-nocheck
-import getNewItem from '../../getNewSlide/getNewItem';
+import getNewItem from '../../getNewSlide/getNewItem.js';
 import { onMount } from 'svelte';
 export let items;
 export let slideExtra =[];

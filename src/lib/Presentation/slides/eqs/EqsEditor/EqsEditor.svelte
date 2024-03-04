@@ -10,7 +10,7 @@ import EqPart from './EqPart.svelte';
 import EqPartLowerToolBar from './EqPartLowerToolBar.svelte';
 import SP from './SPPart/SP.svelte';
 // import PageHeading from './PageHeading.svelte';
-import getNewItem from './getNewItem';
+import getNewItem from './getNewItem.js';
 import { onMount } from 'svelte';
 
 ////////////////////////////////////////////////////////

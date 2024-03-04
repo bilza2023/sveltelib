@@ -1,5 +1,16 @@
 
+import Presentation from "./lib/Presentation/Presentation.svelte"
+import ThemeDD  from './lib/Presentation/ThemeDD.svelte';
+import  getNewSlide  from './lib/Presentation/getNewSlide/getNewSlide.js';
+import   themes  from './lib/Presentation/themes.js';
 
 
 
-export { default as Presentation } from './lib/components/Presentation/Presentation.svelte';
+export { 
+        Presentation,
+        ThemeDD,
+        getNewSlide ,
+        themes
+    } 
+
+
