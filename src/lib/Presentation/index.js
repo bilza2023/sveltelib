@@ -1,6 +1,10 @@
 
-export { default as Presentation } from './Presentation.svelte';
-export { default as ThemeDD } from './ThemeDD.svelte';
-export { default as getNewSlide } from './getNewSlide/getNewSlide';
-// export { default as getNewItem } from './getNewSlide/getNewItem.js';
-export {  themes } from './themes.js';
+import { default as  Presentation} from './Presentation.svelte';
+import { default as  ThemeDD} from './ThemeDD.svelte';
+import { themes } from './themes.js';
+
+import getNewSlide from './getNewSlide/getNewSlide';
+import getNewItem  from './getNewSlide/getNewItem.js';
+
+
+export {  Presentation,ThemeDD,themes,getNewSlide,getNewItem }

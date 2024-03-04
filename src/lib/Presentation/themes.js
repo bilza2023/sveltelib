@@ -20,6 +20,15 @@ basic :{
     highlightColor  : '#606C38',
 
 },
+default :{
+    description     : '',
+    primaryColor    : '#BC6C25',
+    secondaryColor  : '#DDA15E',
+    backgroundColor : '#FEFAE0',
+    textColor       : '#283618',
+    highlightColor  : '#606C38',
+
+},
 earthyElegance : {
     description: '',
     primaryColor: '#DAD7CD',

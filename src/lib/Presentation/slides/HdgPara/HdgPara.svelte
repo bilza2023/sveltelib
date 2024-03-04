@@ -13,7 +13,7 @@ export let theme;
   <div class="flex justify-center m-1 p-1 rounded-md mt-8 px-4 mx-20"
        style={`background-color: ${theme.primaryColor};color: ${theme.textColor};`}>
 
-    <h1 class="text-white text-2xl" style={`color: ${theme.textColor}`}>
+    <h1 class="text-white" style={`color: ${theme.textColor} `}>
       {items[0].content}
     </h1>
   </div>
