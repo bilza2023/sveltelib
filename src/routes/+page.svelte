@@ -7,9 +7,11 @@
     getNewSlide,
     getNewItem,
   } from "../lib/Presentation/index.js";
+
   import PContiner from "../lib/Presentation/PContainer.svelte";
   import { fade } from "svelte/transition";
   import Toolbar from "./Toolbar.svelte";
+
 
   const currentSlide = getNewSlide();
 
@@ -94,14 +96,15 @@ let fontSize2 = "40px"
         <Toolbar />
       </div>
     {/if}
+   
 
-    <h1 id="heading" class="  mx-auto"
-    style={`font-size: ${fontSize}; top:50px;`}
-    >This is 25% of the Height</h1>
+  <!-- <h1 id="heading" class="mx-auto"
+  style={`font-size: ${fontSize}; top:50px;`}
+  >This is 25% of the Height</h1>
 
-    <div id="para" class="  mx-auto" style={`font-size: ${(fontSize2 )}; top:200px;`}>This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.</div>
+  <div id="para" class="mx-auto" style={`font-size: ${(fontSize2 )}; top:200px;`}>This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.</div> -->
     
-    <!-- <Presentation {currentSlide} {theme} {pulse} {setPulse} tcode={"fbise9math"}/> -->
+    <Presentation {currentSlide} {theme} {pulse} {setPulse} tcode={"fbise9math"}/>
   </div>
 </div>
 
@@ -123,7 +126,7 @@ let fontSize2 = "40px"
     border-radius: 10px;
     color:  rgb(49, 28, 3);
     background-color: rgb(182, 162, 137);
-    white-space: nowrap;
+    white-space: normal;
     text-align: center;
   }
 
