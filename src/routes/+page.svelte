@@ -65,7 +65,7 @@
   const heading = document.getElementById("heading");
   let currentFontSize = parseFloat(getComputedStyle(heading).fontSize);
   let currentHeight = heading.clientHeight;
-  const quarterScreenHeight = screenHeight * 0.25;
+  const quarterScreenHeight = screenHeight * 0.20;
 
   while (currentHeight < quarterScreenHeight) {
     currentFontSize++;
@@ -82,21 +82,25 @@ onMount(() => {
   adjustFontSize();
 });
 
+let fontSize2 = "40px"
+
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div on:mousemove={handleMouseMove}>
-  <div class="outerContainer bg-green-800 ">
+  <div class="outerContainer ">
     {#if toolbarVisible}
       <div in:fade={{ delay: 100 }} out:fade={{ delay: 500 }}>
         <Toolbar />
       </div>
     {/if}
 
-    <h1 id="heading" class="heading  mx-auto"
-    style={`font-size: ${fontSize}`}
+    <h1 id="heading" class="  mx-auto"
+    style={`font-size: ${fontSize}; top:50px;`}
     >This is 25% of the Height</h1>
 
+    <div id="para" class="  mx-auto" style={`font-size: ${(fontSize2 )}; top:200px;`}>This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.This is the text.</div>
+    
     <!-- <Presentation {currentSlide} {theme} {pulse} {setPulse} tcode={"fbise9math"}/> -->
   </div>
 </div>
@@ -105,13 +109,38 @@ onMount(() => {
   .outerContainer {
     min-width: 100vw; /* 100% of the viewport width */
     min-height: 100vh; /* 100% of the viewport height */
+    background-color: rgb(37, 27, 15);
   }
 
-  .heading {
-    background-color: burlywood;
+  #heading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 10px;
+    color:  rgb(49, 28, 3);
+    background-color: rgb(182, 162, 137);
     white-space: nowrap;
     text-align: center;
-    --font-size: {fontSize}; 
-
   }
+
+  #para {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(182, 162, 137);
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 10px;
+    opacity: 1;
+    line-height:2em ;
+    padding :6px;
+    text-align: center;
+  }
+  
 </style>
